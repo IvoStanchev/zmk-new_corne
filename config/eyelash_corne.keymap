@@ -132,6 +132,23 @@
 
 #endif
 
+// Define thumb mod timing
+#ifndef THUMB_HOLDING_TIME
+
+#define THUMB_HOLDING_TIME INDEX_HOLDING_TIME
+
+#endif
+#ifndef THUMB_STREAK_DECAY
+
+#define THUMB_STREAK_DECAY INDEX_STREAK_DECAY
+
+#endif
+#ifndef THUMB_REPEAT_DECAY
+
+#define THUMB_REPEAT_DECAY INDEX_REPEAT_DECAY
+
+#endif
+
 // Define key position groups for home row mods
 
 #define LEFT_HAND_KEYS 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29  // left-hand keys
@@ -302,6 +319,17 @@
             require-prior-idle-ms = <PINKY_STREAK_DECAY>;
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
+        };
+
+        // Thumb Layer-Tap
+        tm: thumb_layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "tap-preferred";
+            tapping-term-ms = <THUMB_HOLDING_TIME>;
+            quick-tap-ms = <THUMB_REPEAT_DECAY>;
+            require-prior-idle-ms = <THUMB_STREAK_DECAY>;
+            #binding-cells = <2>;
+            bindings = <&mo>, <&kp>;
         };
 
         td0: td0 {

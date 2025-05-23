@@ -322,6 +322,7 @@
         };
 
         // Thumb Layer-Tap
+
         tm: thumb_layer_tap {
             compatible = "zmk,behavior-hold-tap";
             flavor = "tap-preferred";
@@ -363,7 +364,7 @@
 &kp TAB    &kp Q  &kp W             &kp E                       &kp R                    &kp T                                  &kp UP                &kp Y                &kp U                     &kp I                        &kp O             &kp P                 &kp F12
 &kp ESC    &kp A  &hml_ring LALT S  &hml_middle LEFT_CONTROL D  &hml_index LEFT_SHIFT F  &kp G                        &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                &hmr_index RIGHT_SHIFT J  &hmr_middle RIGHT_CONTROL K  &hmr_ring RALT L  &hmr_pinky RGUI SEMI  &kp RC(PAGE_UP)
 &kp LSHFT  &kp Z  &kp X             &kp C                       &kp V                    &kp B               &none              &kp DOWN              &kp N                &kp M                     &kp COMMA                    &kp DOT           &kp FSLH              &kp ESC
-                                    &lt 1 BACKSPACE             &kp DELETE               &kp LA(LEFT_ARROW)                                           &kp RA(RIGHT_ARROW)  &kp ENTER                 &lt 1 SPACE
+                                    &tm 1 BACKSPACE             &kp DELETE               &kp LA(LEFT_ARROW)                                           &kp RA(RIGHT_ARROW)  &kp ENTER                 &tm 1 SPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;

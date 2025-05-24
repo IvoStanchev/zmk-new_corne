@@ -43,12 +43,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: ']', s: '}'}
-  - {t: '$$mdi:backspace$$', h: FN}
+  - {t: '$$mdi:backspace$$', h: Symbols}
   - {t: '$$mdi:keyboard-esc$$', h: Fn}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: Symbols}
-  - {t: '$$mdi:keyboard-tab$$', h: Symbols}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: FN}
+  - {t: '$$mdi:keyboard-tab$$', h: FN}
   - {t: '$$mdi:keyboard-return$$', h: Fn}
-  - {t: '$$mdi:keyboard-space$$', h: FN}
+  - {t: '$$mdi:keyboard-space$$', h: Symbols}
   Symbols:
   - '|'
   - '{'
@@ -92,12 +92,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - ':'
+  - {t: ':', type: held}
   - {t: /, s: '?'}
-  - {t: '~', type: held}
-  - {t: RGB TOG, type: held alternate}
+  - '~'
+  - RGB TOG
   - RGB EFF
-  - RGB COLOR HSB(266,61,42)
+  - {t: 'RGB COLOR HSB(266,61,42)', type: held alternate}
   Fn:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '!'
@@ -190,12 +190,12 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}

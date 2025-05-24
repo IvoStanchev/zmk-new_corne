@@ -251,15 +251,22 @@ combos:
   l: [Base]
 - p: [43, 46]
   k: Ctl+PgUp
+  l: [Base]
 - p: [45, 44]
   k: F12
+  l: [Base]
 - p: [18, 22]
   k: Ctl+1
+  l: [Base]
 - p: [17, 23]
   k: Ctl+2
+  l: [Base]
 - p: [16, 24]
   k: Ctl+3
+  l: [Base]
 - p: [15, 25]
   k: Ctl+4
+  l: [Base]
 - p: [14, 26]
   k: Ctl+5
+  l: [Base]

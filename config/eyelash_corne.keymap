@@ -185,6 +185,36 @@
             bindings = <&kp LC(PAGE_UP)>;
             key-positions = <44 45>;
         };
+
+        toggle-console {
+            bindings = <&kp F12>;
+            key-positions = <42 47>;
+        };
+
+        win1 {
+            bindings = <&kp LC(NUMBER_1)>;
+            key-positions = <18 22>;
+        };
+
+        win2 {
+            bindings = <&kp LC(NUMBER_2)>;
+            key-positions = <17 23>;
+        };
+
+        win3 {
+            bindings = <&kp LC(NUMBER_3)>;
+            key-positions = <16 24>;
+        };
+
+        win4 {
+            bindings = <&kp LC(NUMBER_4)>;
+            key-positions = <15 25>;
+        };
+
+        win5 {
+            bindings = <&kp LC(N5)>;
+            key-positions = <14 26>;
+        };
     };
 
     behaviors {
@@ -383,10 +413,10 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp F11    &kp Q  &kp W             &kp E                       &kp R                    &kp T                            &kp UP                &kp Y        &kp U                     &kp I                        &kp O             &kp P                 &kp F12
-&kp CLCK   &kp A  &hml_ring LALT S  &hml_middle LEFT_CONTROL D  &hml_index LEFT_SHIFT F  &kp G                  &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &hmr_index RIGHT_SHIFT J  &hmr_middle RIGHT_CONTROL K  &hmr_ring RALT L  &hmr_pinky RGUI SEMI  &kp PRINTSCREEN
-&kp LSHFT  &kp Z  &kp X             &kp C                       &kp V                    &kp B         &none              &kp DOWN              &kp N        &kp M                     &kp COMMA                    &kp DOT           &kp FSLH              &kp RIGHT_CONTROL
-                                    &tm 3 DELETE                &tm 2 BACKSPACE          &tm 1 ESCAPE                                           &tm 1 ENTER  &tm 2 SPACE               &tm 3 TAB
+&kp GRAVE         &kp Q  &kp W             &kp E                       &kp R                    &kp T                               &kp UP                &kp Y        &kp U                     &kp I                        &kp O             &kp P                 &kp NON_US_BACKSLASH
+&kp CLCK          &kp A  &hml_ring LALT S  &hml_middle LEFT_CONTROL D  &hml_index LEFT_SHIFT F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &hmr_index RIGHT_SHIFT J  &hmr_middle RIGHT_CONTROL K  &hmr_ring RALT L  &hmr_pinky RGUI SEMI  &kp PRINTSCREEN
+&kp LEFT_BRACKET  &kp Z  &kp X             &kp C                       &kp V                    &kp B            &none              &kp DOWN              &kp N        &kp M                     &kp COMMA                    &kp DOT           &kp FSLH              &kp RIGHT_BRACKET
+                                           &tm 3 DELETE                &tm 2 ESCAPE             &tm 1 BACKSPACE                                           &tm 1 SPACE  &tm 2 ENTER               &tm 3 TAB
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;

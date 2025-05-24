@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   Base:
-  - F11
+  - {t: '`', s: '~'}
   - Q
   - W
   - E
@@ -13,7 +13,7 @@ layers:
   - I
   - O
   - P
-  - F12
+  - \
   - CLCK
   - A
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
@@ -29,7 +29,7 @@ layers:
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: ;, h: RGUI, s: ':'}
   - PRINTSCREEN
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '[', s: '{'}
   - Z
   - X
   - C
@@ -42,12 +42,12 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-control$$
+  - {t: ']', s: '}'}
   - {t: '$$mdi:backspace-reverse-outline$$', h: FN}
-  - {t: '$$mdi:backspace$$', h: Fn}
-  - {t: '$$mdi:keyboard-esc$$', h: Symbols}
-  - {t: '$$mdi:keyboard-return$$', h: Symbols}
-  - {t: '$$mdi:keyboard-space$$', h: Fn}
+  - {t: '$$mdi:keyboard-esc$$', h: Fn}
+  - {t: '$$mdi:backspace$$', h: Symbols}
+  - {t: '$$mdi:keyboard-space$$', h: Symbols}
+  - {t: '$$mdi:keyboard-return$$', h: Fn}
   - {t: '$$mdi:keyboard-tab$$', h: FN}
   Symbols:
   - '|'
@@ -251,3 +251,15 @@ combos:
   l: [Base]
 - p: [44, 45]
   k: Ctl+PgUp
+- p: [42, 47]
+  k: F12
+- p: [18, 22]
+  k: Ctl+1
+- p: [17, 23]
+  k: Ctl+2
+- p: [16, 24]
+  k: Ctl+3
+- p: [15, 25]
+  k: Ctl+4
+- p: [14, 26]
+  k: Ctl+5

@@ -184,36 +184,43 @@
         lang {
             bindings = <&kp LC(PAGE_UP)>;
             key-positions = <43 46>;
+            layers = <0>;
         };
 
         toggle-console {
             bindings = <&kp F12>;
             key-positions = <45 44>;
+            layers = <0>;
         };
 
         win1 {
             bindings = <&kp LC(NUMBER_1)>;
             key-positions = <18 22>;
+            layers = <0>;
         };
 
         win2 {
             bindings = <&kp LC(NUMBER_2)>;
             key-positions = <17 23>;
+            layers = <0>;
         };
 
         win3 {
             bindings = <&kp LC(NUMBER_3)>;
             key-positions = <16 24>;
+            layers = <0>;
         };
 
         win4 {
             bindings = <&kp LC(NUMBER_4)>;
             key-positions = <15 25>;
+            layers = <0>;
         };
 
         win5 {
             bindings = <&kp LC(N5)>;
             key-positions = <14 26>;
+            layers = <0>;
         };
     };
 

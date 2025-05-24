@@ -43,12 +43,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: ']', s: '}'}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: FN}
+  - {t: '$$mdi:backspace$$', h: FN}
   - {t: '$$mdi:keyboard-esc$$', h: Fn}
-  - {t: '$$mdi:backspace$$', h: Symbols}
-  - {t: '$$mdi:keyboard-space$$', h: Symbols}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: Symbols}
+  - {t: '$$mdi:keyboard-tab$$', h: Symbols}
   - {t: '$$mdi:keyboard-return$$', h: Fn}
-  - {t: '$$mdi:keyboard-tab$$', h: FN}
+  - {t: '$$mdi:keyboard-space$$', h: FN}
   Symbols:
   - '|'
   - '{'
@@ -95,9 +95,9 @@ layers:
   - ':'
   - {t: /, s: '?'}
   - {t: '~', type: held}
-  - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: RGB TOG, type: held alternate}
+  - RGB EFF
+  - RGB COLOR HSB(266,61,42)
   Fn:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '!'
@@ -246,12 +246,12 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [43, 46]
+- p: [42, 47]
   k: Ctl+$$mdi:keyboard-space$$
   l: [Base]
-- p: [44, 45]
+- p: [43, 46]
   k: Ctl+PgUp
-- p: [42, 47]
+- p: [45, 44]
   k: F12
 - p: [18, 22]
   k: Ctl+1

@@ -172,7 +172,20 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        completion {
+            bindings = <&kp LC(SPACE)>;
+            key-positions = <43 46>;
+            layers = <0>;
+        };
+
+        lang {
+            bindings = <&kp LC(PAGE_UP)>;
+            key-positions = <44 45>;
+        };
+    };
 
     behaviors {
         // Home Row Mods - Left Hand
@@ -361,10 +374,10 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W             &kp E                       &kp R                    &kp T                                  &kp UP                &kp Y                &kp U                     &kp I                        &kp O             &kp P                 &kp F12
-&kp ESC    &kp A  &hml_ring LALT S  &hml_middle LEFT_CONTROL D  &hml_index LEFT_SHIFT F  &kp G                        &kp LEFT  &kp ENTER  &kp RIGHT  &kp H                &hmr_index RIGHT_SHIFT J  &hmr_middle RIGHT_CONTROL K  &hmr_ring RALT L  &hmr_pinky RGUI SEMI  &kp RC(PAGE_UP)
-&kp LSHFT  &kp Z  &kp X             &kp C                       &kp V                    &kp B               &none              &kp DOWN              &kp N                &kp M                     &kp COMMA                    &kp DOT           &kp FSLH              &kp ESC
-                                    &tm 1 BACKSPACE             &kp DELETE               &kp LA(LEFT_ARROW)                                           &kp RA(RIGHT_ARROW)  &kp ENTER                 &tm 1 SPACE
+&kp F11    &kp Q  &kp W             &kp E                       &kp R                    &kp T                            &kp UP                &kp Y        &kp U                     &kp I                        &kp O             &kp P                 &kp F12
+&kp CLCK   &kp A  &hml_ring LALT S  &hml_middle LEFT_CONTROL D  &hml_index LEFT_SHIFT F  &kp G                  &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &hmr_index RIGHT_SHIFT J  &hmr_middle RIGHT_CONTROL K  &hmr_ring RALT L  &hmr_pinky RGUI SEMI  &kp PRINTSCREEN
+&kp LSHFT  &kp Z  &kp X             &kp C                       &kp V                    &kp B         &none              &kp DOWN              &kp N        &kp M                     &kp COMMA                    &kp DOT           &kp FSLH              &kp RIGHT_CONTROL
+                                    &tm 1 DELETE                &tm 2 BACKSPACE          &tm 1 ESCAPE                                           &tm 1 ENTER  &tm 2 SPACE               &tm 1 TAB
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -372,11 +385,23 @@
 
         Symbols {
             bindings = <
-&kp PIPE              &kp LEFT_BRACE        &kp SQT        &kp GRAVE       &kp DOUBLE_QUOTES  &kp RIGHT_BRACE                          &trans          &trans          &trans          &trans        &trans           &trans  &trans
-&kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS  &kp LESS_THAN  &kp EQUAL       &kp GREATER_THAN   &kp RIGHT_PARENTHESIS            &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&kp QUESTION          &kp LEFT_BRACKET      &kp MINUS      &kp UNDERSCORE  &kp PLUS           &kp RIGHT_BRACKET      &trans            &trans          &trans          &trans          &trans        &trans           &trans  &trans
-                                                           &kp COLON       &kp SLASH          &kp TILDE                                                &trans          &trans          &trans
+&kp PIPE       &kp LEFT_BRACE        &kp SQT        &kp GRAVE       &kp DOUBLE_QUOTES  &kp RIGHT_BRACE                          &trans          &trans          &trans          &trans        &trans           &trans  &trans
+&kp QUESTION   &kp LEFT_PARENTHESIS  &kp LESS_THAN  &kp EQUAL       &kp GREATER_THAN   &kp RIGHT_PARENTHESIS            &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&kp BACKSLASH  &kp LEFT_BRACKET      &kp MINUS      &kp UNDERSCORE  &kp PLUS           &kp RIGHT_BRACKET      &trans            &trans          &trans          &trans          &trans        &trans           &trans  &trans
+                                                    &kp COLON       &kp SLASH          &kp TILDE                                                &trans          &trans          &trans
             >;
+        };
+
+        Number {
+            display-name = "Fn";
+            bindings = <
+&none  &kp EXCLAMATION   &kp AT_SIGN       &kp HASH          &kp DOLLAR        &kp PERCENT                  &none         &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F11
+&none  &kp N1            &kp N2            &kp N3            &kp N4            &kp N5                &none  &none  &none  &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &kp F12
+&none  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(N5)   &none           &none         &none      &none          &none         &none                 &none                  &none
+                                           &none             &none             &none                                      &none      &none          &none
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
         };
 
         lower_layer {
@@ -386,18 +411,6 @@
 &trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
 &trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
                                          &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
-
-        layer_3 {
-            display-name = "Fn";
-            bindings = <
-&studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans          &sys_reset  &trans     &bootloader  &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                       &trans       &trans     &trans                                                                   &trans       &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;

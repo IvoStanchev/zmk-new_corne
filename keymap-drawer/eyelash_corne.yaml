@@ -96,8 +96,8 @@ layers:
   - {t: /, s: '?'}
   - '~'
   - RGB TOG
-  - RGB EFF
-  - {t: 'RGB COLOR HSB(266,61,42)', type: held alternate}
+  - AltGr+$$mdi:arrow-left-bold$$
+  - {t: 'Alt+$$mdi:arrow-right-bold$$', type: held alternate}
   Fn:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '!'
@@ -141,7 +141,7 @@ layers:
   - Ctl+4
   - {t: Ctl+5, s: Ctl+%}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -149,7 +149,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   FN:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}

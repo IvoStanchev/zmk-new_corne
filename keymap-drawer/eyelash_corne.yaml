@@ -196,6 +196,55 @@ layers:
   - {t: RGB TOG, type: held alternate}
   - RGB EFF
   - RGB EFR
+  Dvorak:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - .
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - P
+  - Y
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - F
+  - G
+  - C
+  - R
+  - L
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - A
+  - O
+  - E
+  - U
+  - I
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - D
+  - H
+  - T
+  - N
+  - S
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: ;, s: ':'}
+  - Q
+  - J
+  - K
+  - X
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - B
+  - M
+  - W
+  - V
+  - Z
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [42, 47]
   k: Ctl+$$mdi:keyboard-space$$
@@ -221,3 +270,9 @@ combos:
 - p: [14, 26]
   k: Ctl+5
   l: [Base]
+- p: [12, 0]
+  k: {t: Dvorak, h: toggle}
+  l: [Base]
+- p: [12, 0]
+  k: {t: Base, h: toggle}
+  l: [Dvorak]

@@ -86,16 +86,16 @@ layers:
   - {t: ']', s: '}'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - HOME
+  - PgDn
+  - PgUp
+  - END
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: ':', type: held}
   - {t: /, s: '?'}
   - '~'
-  - RGB TOG
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - AltGr+$$mdi:arrow-left-bold$$
   - {t: 'Alt+$$mdi:arrow-right-bold$$', type: held alternate}
   Number:

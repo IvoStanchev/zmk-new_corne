@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
-  Base:
+  Qwerty:
   - {t: '`', s: '~'}
   - Q
   - W
@@ -44,10 +44,10 @@ layers:
   - {t: /, s: '?'}
   - {t: ']', s: '}'}
   - {t: '$$mdi:backspace$$', h: Symbols}
-  - {t: '$$mdi:keyboard-esc$$', h: Fn}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: FN}
-  - {t: '$$mdi:keyboard-tab$$', h: FN}
-  - {t: '$$mdi:keyboard-return$$', h: Fn}
+  - {t: '$$mdi:keyboard-esc$$', h: Number}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: fn}
+  - {t: '$$mdi:keyboard-tab$$', h: fn}
+  - {t: '$$mdi:keyboard-return$$', h: Number}
   - {t: '$$mdi:keyboard-space$$', h: Symbols}
   Symbols:
   - '|'
@@ -98,7 +98,7 @@ layers:
   - RGB TOG
   - AltGr+$$mdi:arrow-left-bold$$
   - {t: 'Alt+$$mdi:arrow-right-bold$$', type: held alternate}
-  Fn:
+  Number:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '!'
   - '@'
@@ -147,16 +147,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  FN:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - RGB HUI
-  - RGB HUD
+  fn:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -170,10 +161,19 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - RGB SAI
-  - RGB SAD
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:brightness-7$$
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
+  - $$mdi:brightness-5$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:progress-download$$
@@ -184,14 +184,14 @@ layers:
   - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - RGB BRI
-  - RGB BRD
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:progress-download$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: Qwerty, h: toggle}
+  - {t: Dvorak, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: RGB TOG, type: held alternate}
   - RGB EFF
@@ -248,31 +248,25 @@ layers:
 combos:
 - p: [42, 47]
   k: Ctl+$$mdi:keyboard-space$$
-  l: [Base]
+  l: [Qwerty]
 - p: [43, 46]
   k: Ctl+PgUp
-  l: [Base]
+  l: [Qwerty]
 - p: [45, 44]
   k: F12
-  l: [Base]
+  l: [Qwerty]
 - p: [18, 22]
   k: Ctl+1
-  l: [Base]
+  l: [Qwerty]
 - p: [17, 23]
   k: Ctl+2
-  l: [Base]
+  l: [Qwerty]
 - p: [16, 24]
   k: Ctl+3
-  l: [Base]
+  l: [Qwerty]
 - p: [15, 25]
   k: Ctl+4
-  l: [Base]
+  l: [Qwerty]
 - p: [14, 26]
   k: Ctl+5
-  l: [Base]
-- p: [12, 0]
-  k: {t: Dvorak, h: toggle}
-  l: [Base]
-- p: [12, 0]
-  k: {t: Base, h: toggle}
-  l: [Dvorak]
+  l: [Qwerty]

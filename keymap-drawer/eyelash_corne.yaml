@@ -45,8 +45,57 @@ layers:
   - {t: ']', s: '}'}
   - {t: '$$mdi:backspace$$', h: Symbols}
   - {t: '$$mdi:keyboard-esc$$', h: Number}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: fn}
-  - {t: '$$mdi:keyboard-tab$$', h: fn}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: FN}
+  - {t: '$$mdi:keyboard-tab$$', h: FN}
+  - {t: '$$mdi:keyboard-return$$', h: Number}
+  - {t: '$$mdi:keyboard-space$$', h: Symbols}
+  Dvorak:
+  - {t: '`', s: '~'}
+  - .
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - P
+  - Y
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - F
+  - G
+  - C
+  - R
+  - L
+  - {t: \, s: '|'}
+  - $$mdi:apple-keyboard-caps$$
+  - A
+  - O
+  - E
+  - U
+  - I
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - D
+  - H
+  - T
+  - N
+  - S
+  - PRINTSCREEN
+  - {t: '[', s: '{'}
+  - {t: ;, s: ':'}
+  - Q
+  - J
+  - K
+  - X
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - B
+  - M
+  - W
+  - V
+  - Z
+  - {t: ']', s: '}'}
+  - {t: '$$mdi:backspace$$', h: Symbols}
+  - {t: '$$mdi:keyboard-esc$$', h: Number}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: FN}
+  - {t: '$$mdi:keyboard-tab$$', h: FN}
   - {t: '$$mdi:keyboard-return$$', h: Number}
   - {t: '$$mdi:keyboard-space$$', h: Symbols}
   Symbols:
@@ -147,7 +196,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  fn:
+  FN:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -196,55 +245,6 @@ layers:
   - {t: RGB TOG, type: held alternate}
   - RGB EFF
   - RGB EFR
-  Dvorak:
-  - {t: '`', s: '~'}
-  - .
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - P
-  - Y
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F
-  - G
-  - C
-  - R
-  - L
-  - {t: \, s: '|'}
-  - $$mdi:apple-keyboard-caps$$
-  - A
-  - O
-  - E
-  - U
-  - I
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - D
-  - H
-  - T
-  - N
-  - S
-  - PRINTSCREEN
-  - {t: '[', s: '{'}
-  - {t: ;, s: ':'}
-  - Q
-  - J
-  - K
-  - X
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - B
-  - M
-  - W
-  - V
-  - Z
-  - {t: ']', s: '}'}
-  - {t: '$$mdi:backspace$$', h: Symbols}
-  - {t: '$$mdi:keyboard-esc$$', h: Number}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: fn}
-  - {t: '$$mdi:keyboard-tab$$', h: fn}
-  - {t: '$$mdi:keyboard-return$$', h: Number}
-  - {t: '$$mdi:keyboard-space$$', h: Symbols}
 combos:
 - p: [42, 47]
   k: Ctl+$$mdi:keyboard-space$$

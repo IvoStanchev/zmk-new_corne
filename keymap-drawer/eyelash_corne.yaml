@@ -197,7 +197,7 @@ layers:
   - RGB EFF
   - RGB EFR
   Dvorak:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '`', s: '~'}
   - .
   - {t: ',', s: <}
   - {t: ., s: '>'}
@@ -209,8 +209,8 @@ layers:
   - C
   - R
   - L
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: \, s: '|'}
+  - $$mdi:apple-keyboard-caps$$
   - A
   - O
   - E
@@ -224,8 +224,8 @@ layers:
   - T
   - N
   - S
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PRINTSCREEN
+  - {t: '[', s: '{'}
   - {t: ;, s: ':'}
   - Q
   - J
@@ -238,13 +238,13 @@ layers:
   - W
   - V
   - Z
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: ']', s: '}'}
+  - {t: '$$mdi:backspace$$', h: Symbols}
+  - {t: '$$mdi:keyboard-esc$$', h: Number}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: fn}
+  - {t: '$$mdi:keyboard-tab$$', h: fn}
+  - {t: '$$mdi:keyboard-return$$', h: Number}
+  - {t: '$$mdi:keyboard-space$$', h: Symbols}
 combos:
 - p: [42, 47]
   k: Ctl+$$mdi:keyboard-space$$

@@ -420,10 +420,10 @@
         Qwerty {
             display-name = "Qwerty";
             bindings = <
-&kp GRAVE         &kp Q  &kp W             &kp E                       &kp R                    &kp T                            &kp UP                &kp Y      &kp U                     &kp I                        &kp O             &kp P                 &kp BACKSLASH
-&kp CLCK          &kp A  &hml_ring LALT S  &hml_middle LEFT_CONTROL D  &hml_index LEFT_SHIFT F  &kp G                  &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &hmr_index RIGHT_SHIFT J  &hmr_middle RIGHT_CONTROL K  &hmr_ring RALT L  &hmr_pinky RGUI SEMI  &kp PRINTSCREEN
-&kp LEFT_BRACKET  &kp Z  &kp X             &kp C                       &kp V                    &kp B         &none              &kp DOWN              &kp N      &kp M                     &kp COMMA                    &kp DOT           &kp FSLH              &kp RIGHT_BRACKET
-                                           &tm 2 BACKSPACE             &tm 3 ESCAPE             &tm 4 DELETE                                           &tm 4 TAB  &tm 3 ENTER               &tm 2 SPACE
+&kp GRAVE         &kp Q  &kp W             &kp E                       &kp R                    &kp T                                    &kp LC(PAGE_UP)               &kp Y        &kp U                     &kp I                        &kp O             &kp P                 &kp BACKSLASH
+&kp CLCK          &kp A  &hml_ring LALT S  &hml_middle LEFT_CONTROL D  &hml_index LEFT_SHIFT F  &kp G                          &kp LEFT  &kp ENTER          &kp RIGHT  &kp H        &hmr_index RIGHT_SHIFT J  &hmr_middle RIGHT_CONTROL K  &hmr_ring RALT L  &hmr_pinky RGUI SEMI  &kp PRINTSCREEN
+&kp LEFT_BRACKET  &kp Z  &kp X             &kp C                       &kp V                    &kp B            &kp K_MUTE              &kp LC(PAGE_DOWN)             &kp N        &kp M                     &kp COMMA                    &kp DOT           &kp FSLH              &kp RIGHT_BRACKET
+                                           &tm 2 LEFT_SHIFT            &tm 3 ESCAPE             &tm 4 BACKSPACE                                                        &tm 4 ENTER  &tm 3 SPACE               &tm 2 TAB
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;

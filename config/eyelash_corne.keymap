@@ -438,7 +438,7 @@
             >;
 
             label = "Symbols";
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         Number {

@@ -49,55 +49,6 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: FN}
   - {t: '$$mdi:keyboard-space$$', h: Number}
   - {t: '$$mdi:keyboard-tab$$', h: Symbols}
-  Dvorak:
-  - {t: '`', s: '~'}
-  - .
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - P
-  - Y
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F
-  - G
-  - C
-  - R
-  - L
-  - {t: \, s: '|'}
-  - $$mdi:apple-keyboard-caps$$
-  - A
-  - O
-  - E
-  - U
-  - I
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - D
-  - H
-  - T
-  - N
-  - S
-  - PRINTSCREEN
-  - {t: '[', s: '{'}
-  - {t: ;, s: ':'}
-  - Q
-  - J
-  - K
-  - X
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - B
-  - M
-  - W
-  - V
-  - Z
-  - {t: ']', s: '}'}
-  - {t: '$$mdi:backspace$$', h: Symbols}
-  - {t: '$$mdi:keyboard-esc$$', h: Number}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: FN}
-  - {t: '$$mdi:keyboard-tab$$', h: FN}
-  - {t: '$$mdi:keyboard-return$$', h: Number}
-  - {t: '$$mdi:keyboard-space$$', h: Symbols}
   Symbols:
   - '|'
   - '{'
@@ -105,7 +56,7 @@ layers:
   - {t: '`', s: '~'}
   - '"'
   - '}'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -118,9 +69,9 @@ layers:
   - {t: '=', s: +}
   - '>'
   - )
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - '&mkp MB1'
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
@@ -134,7 +85,7 @@ layers:
   - +
   - {t: ']', s: '}'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - HOME
   - PgDn
   - PgUp
@@ -240,7 +191,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:progress-download$$
   - {t: Qwerty, h: toggle}
-  - {t: Dvorak, h: toggle}
+  - {t: Qwerty, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: RGB TOG, type: held alternate}
   - RGB EFF
